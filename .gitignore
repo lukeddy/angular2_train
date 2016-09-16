@@ -3,3 +3,5 @@
 /helloworld/node_modules
 .idea
 npm-debug.log
+/routerdemo/typings
+/routerdemo/node_modules
