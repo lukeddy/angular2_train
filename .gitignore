@@ -5,3 +5,7 @@
 npm-debug.log
 /routerdemo/typings
 /routerdemo/node_modules
+/spotify-music/node_modules/
+/spotify-music/typings/
+/spotifymusic/node_modules/
+/spotifymusic/typings/
