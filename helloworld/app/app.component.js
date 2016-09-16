@@ -15,7 +15,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h5 class="well"><i class="glyphicon glyphicon-thumbs-up"></i> 你好，Angular2,我是来自angular2的内容</h5>'
+            // template:'<h5 class="well"><i class="glyphicon glyphicon-thumbs-up"></i> 你好，Angular2,我是来自angular2的内容</h5>'
+            templateUrl: './template/myapp-template.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

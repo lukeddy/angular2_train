@@ -2,3 +2,4 @@
 /helloworld/typings
 /helloworld/node_modules
 .idea
+npm-debug.log
