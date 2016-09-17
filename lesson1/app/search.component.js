@@ -11,11 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var SearchBox = (function () {
     function SearchBox() {
+        this.text = '请输入关键字';
     }
+    __decorate([
+        core_1.Input("placeholdervalue"), 
+        __metadata('design:type', Object)
+    ], SearchBox.prototype, "text", void 0);
     SearchBox = __decorate([
         core_1.Component({
             selector: 'search-box',
-            template: '<input placeholder="关键字"/><button>清空</button>'
+            template: '<input placeholder="{{text}}"/><button>清空</button>'
         }), 
         __metadata('design:paramtypes', [])
     ], SearchBox);
