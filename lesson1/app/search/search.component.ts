@@ -3,9 +3,9 @@ import {Component,Input} from '@angular/core';
 
 @Component({
     selector:'search-box',
-    template:'<input placeholder="{{text}}" #search/>' +
-    '<button (click)="clear(search)" class="btn-clear">清空</button>',
-    styles:['.btn-clear{background:red;color:#fff;}']
+    template:'<input placeholder="{{text}}" #search/><button (click)="clear(search)" class="btn-clear">清空</button>',
+    //styles:['.btn-clear{background:tomato;color:#fff;}']
+    styleUrls:['style/search.component.css']
 })
 
 

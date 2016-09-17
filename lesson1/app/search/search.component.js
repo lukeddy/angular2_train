@@ -25,9 +25,9 @@ var SearchBox = (function () {
     SearchBox = __decorate([
         core_1.Component({
             selector: 'search-box',
-            template: '<input placeholder="{{text}}" #search/>' +
-                '<button (click)="clear(search)" class="btn-clear">清空</button>',
-            styles: ['.btn-clear{background:red;color:#fff;}']
+            template: '<input placeholder="{{text}}" #search/><button (click)="clear(search)" class="btn-clear">清空</button>',
+            //styles:['.btn-clear{background:tomato;color:#fff;}']
+            styleUrls: ['style/search.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], SearchBox);

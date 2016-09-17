@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var platform_browser_1 = require('@angular/platform-browser');
-var search_component_1 = require("./search.component");
+var search_component_1 = require("./search/search.component");
 var App = (function () {
     function App() {
     }
