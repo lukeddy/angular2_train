@@ -1,0 +1,31 @@
+<div class="container">
+
+    <div class="row" *ngIf="appState=='default'">
+        <h3>添加TODO</h3>
+        <form (submit)="addTodo()">
+            <input type="text"  name="text" [(ngModel)]="text">
+            <button class="btn btn-default btn-sm" type="submit">添加TODO</button>
+        </form>
+    </div>
+
+    <div class="row" *ngIf="appState=='edit'">
+        <h3>编辑TODO</h3>
+        <form (submit)="updateTodo()">
+            <input type="text"  name="text" [(ngModel)]="text">
+            <button class="btn btn-default btn-sm" type="submit">修改TODO</button>
+        </form>
+    </div>
+
+    <div class="row">
+        <h3>TODO列表[ <a href="javascript:;" (click)="appState='default';">添加</a> ] </h3>
+        <ul class="list-group">
+            <li *ngFor="let todo of todos;let idx=index;" class="list-group-item">
+                {{todo.text}}
+                <span class="pull-right">
+                    <button (click)="deleteTodo(idx)">删除</button>
+                <button (click)="editTodo(idx,todo.text)">修改</button>
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

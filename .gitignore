@@ -13,3 +13,5 @@ npm-debug.log
 /lesson1/typings/
 /lesson2-form/node_modules/
 /lesson2-form/typings/
+/todo/node_modules/
+/todo/typings/
