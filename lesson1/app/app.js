@@ -15,6 +15,9 @@ var search_component_1 = require("./search/search.component");
 var App = (function () {
     function App() {
     }
+    App.prototype.appSearch = function (text) {
+        alert('Called APP Method,value is:' + text);
+    };
     App = __decorate([
         core_1.Component({
             selector: 'my-app',

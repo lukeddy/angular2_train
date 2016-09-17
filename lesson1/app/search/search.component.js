@@ -12,21 +12,30 @@ var core_1 = require('@angular/core');
 var SearchBox = (function () {
     function SearchBox() {
         this.text = '请输入关键字';
+        //组件间数据交互注解
+        this.searchEmitter = new core_1.EventEmitter();
     }
+    SearchBox.prototype.onSearch = function (searchTxt) {
+        //alert(searchTxt);
+        this.searchEmitter.emit(searchTxt);
+    };
     SearchBox.prototype.clear = function (input) {
         console.log("clear things.");
-        //console.log(input);
         input.value = '';
     };
     __decorate([
         core_1.Input("placeholdervalue"), 
         __metadata('design:type', Object)
     ], SearchBox.prototype, "text", void 0);
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], SearchBox.prototype, "searchEmitter", void 0);
     SearchBox = __decorate([
         core_1.Component({
             selector: 'search-box',
-            template: '<input placeholder="{{text}}" #search/><button (click)="clear(search)" class="btn-clear">清空</button>',
-            //styles:['.btn-clear{background:tomato;color:#fff;}']
+            template: '<input placeholder="{{text}}" #search  (keydown.enter)="onSearch(search.value)"/>' +
+                '<button (click)="clear(search)" class="btn-clear">清空</button>',
             styleUrls: ['style/search.component.css']
         }), 
         __metadata('design:paramtypes', [])

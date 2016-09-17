@@ -11,6 +11,10 @@ import {SearchBox} from "./search/search.component";
 
 export class App{
 
+    appSearch(text){
+      alert('Called APP Method,value is:'+text);
+    }
+
 }
 
 @NgModule({
