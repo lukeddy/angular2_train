@@ -13,6 +13,11 @@ var SearchBox = (function () {
     function SearchBox() {
         this.text = '请输入关键字';
     }
+    SearchBox.prototype.clear = function (input) {
+        console.log("clear things.");
+        //console.log(input);
+        input.value = '';
+    };
     __decorate([
         core_1.Input("placeholdervalue"), 
         __metadata('design:type', Object)
@@ -20,7 +25,8 @@ var SearchBox = (function () {
     SearchBox = __decorate([
         core_1.Component({
             selector: 'search-box',
-            template: '<input placeholder="{{text}}"/><button>清空</button>'
+            template: '<input placeholder="{{text}}" #search/>' +
+                '<button (click)="clear(search)">清空</button>'
         }), 
         __metadata('design:paramtypes', [])
     ], SearchBox);
