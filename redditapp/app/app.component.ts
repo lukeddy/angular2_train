@@ -8,31 +8,27 @@ import {Article} from "./model/article";
         class: 'row'
     },
     template: `
-    <div class="four wide column center aligned votes">
-         <div class="ui statistic">
-           <div class="value"> {{ article.votes }}</div>
-           <div class="label">Points</div>
-        </div>
+    <li class="list-group-item media">
+    <div class="media-left" style="background:gray;font-size:23px;padding:20px;">
+       <span> {{ article.votes }}</span>
     </div>
-    <div class="twelve wide column">
-        <a class="ui large header" href="{{ article.link }}"> 
+    <div class="media-body">
+        <h3 class="media-heading">
+          <a class="btn btn-link" href="{{ article.link }}"> 
             {{ article.title }}
-        </a>
-    <div class="meta">({{ article.domain() }})</div>
-        <ul class="ui big horizontal list voters">
-            <li class="item">
-                <a href (click)="voteUp()">
-                <i class="arrow up icon"></i> upvote
-                </a>
-            </li>
-            <li class="item">
-                <a href (click)="voteDown()">
-                <i class="arrow down icon"></i>
-                downvote
-                </a> 
-            </li>
-        </ul>
+           </a>
+           <span class="meta">({{ article.domain() }})</span>
+        </h3>
+        <h5>
+          <a href="javascript:;" class="thumbsup" (click)="voteUp()">
+                <i class="glyphicon glyphicon-thumbs-up"></i> 赞 
+          </a>
+          <a href="javascript:;" class="thumbsdown" (click)="voteDown()">
+                <i class="glyphicon glyphicon-thumbs-down"></i> 踩 
+          </a> 
+        </h5> 
     </div>
+    </li>
     `
 })
 
@@ -53,23 +49,29 @@ export class ArticleComponent {
 
 @Component({
     selector: 'reddit',
-    template: `
-        <form class="ui large form segment">
-          <h3 class="ui header">Add a Link</h3>
-            <div class="field">
-             <label for="title">Title:</label> <input name="title" #newtitle>
-            </div>
-              <div class="field">
-                <label for="link">Link:</label>
-                <input name="link" #newlink>
+    template: ` 
+        <div class="col-md-3">
+        <form class="">
+          <legend>新增区域</legend>
+              <div class="form-group">
+                  <label for="title">标题:</label>
+                  <input name="title" #newtitle>
               </div>
-              <button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button">
-                Submit link
+              <div class="form-group">
+                  <label for="link">网址:</label>
+                  <input name="link" #newlink>
+              </div>
+              <button type="button" (click)="addArticle(newtitle, newlink)" class="btn btn-success pul-right">
+                 添加内容
               </button>
         </form>
-        <div class="ui grid posts">
-          <reddit-article *ngFor='let foobar of sortedArticles()' [article]="foobar">
-          </reddit-article>
+        </div>
+        <div class="col-md-9" style="border-left:1px solid gray;">
+            <legend>内容区</legend>
+            <ul class="list-group">
+              <reddit-article *ngFor='let foobar of sortedArticles()' [article]="foobar">
+              </reddit-article>
+            </ul>
         </div>
     `,
 })
