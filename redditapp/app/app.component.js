@@ -28,7 +28,7 @@ var ArticleComponent = (function () {
             host: {
                 class: 'row'
             },
-            template: "\n    <li class=\"list-group-item media\">\n    <div class=\"media-left\" style=\"background:gray;font-size:23px;padding:20px;\">\n       <span> {{ article.votes }}</span>\n    </div>\n    <div class=\"media-body\">\n        <h3 class=\"media-heading\">\n          <a class=\"btn btn-link\" href=\"{{ article.link }}\"> \n            {{ article.title }}\n           </a>\n           <span class=\"meta\">({{ article.domain() }})</span>\n        </h3>\n        <h5>\n          <a href=\"javascript:;\" class=\"thumbsup\" (click)=\"voteUp()\">\n                <i class=\"glyphicon glyphicon-thumbs-up\"></i> \u8D5E \n          </a>\n          <a href=\"javascript:;\" class=\"thumbsdown\" (click)=\"voteDown()\">\n                <i class=\"glyphicon glyphicon-thumbs-down\"></i> \u8E29 \n          </a> \n        </h5> \n    </div>\n    </li>\n    "
+            template: "\n    <li class=\"list-group-item media\">\n    <div class=\"media-left\">\n       <span class=\"num\"> {{ article.votes }}</span>\n    </div>\n    <div class=\"media-body\">\n        <h3 class=\"media-heading\">\n          <a href=\"{{ article.link }}\"> \n            {{ article.title }}\n           </a>\n           <span class=\"meta\">({{ article.domain() }})</span>\n        </h3>\n        <h5>\n          <a href=\"javascript:;\" class=\"thumbsup\" (click)=\"voteUp()\">\n                <i class=\"glyphicon glyphicon-thumbs-up\"></i> \u8D5E \n          </a>\n          <a href=\"javascript:;\" class=\"thumbsdown\" (click)=\"voteDown()\">\n                <i class=\"glyphicon glyphicon-thumbs-down\"></i> \u8E29 \n          </a> \n        </h5> \n    </div>\n    </li>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], ArticleComponent);
@@ -40,7 +40,7 @@ var RedditApp = (function () {
         this.articles = [
             new article_1.Article('Angular 2', 'http://angular.io', 3),
             new article_1.Article('Fullstack', 'http://fullstack.io', 2),
-            new article_1.Article('Angular Homepage', 'http://angular.io', 1),
+            new article_1.Article('Angular Cli', 'http://cli.angular.io', 1),
         ];
     }
     RedditApp.prototype.addArticle = function (title, link) {

@@ -1,3 +1,11 @@
+.media-left{
+    background:gray;
+    padding:20px;
+}
+.media-body{
+    padding-left:20px;
+}
+
 .thumbsup,.thumbsdown{
     display: inline-block;
     margin:6px 6px;
@@ -16,4 +24,8 @@
     color: #333;
     background-color: #fff;
     border-color: #ccc;
+}
+
+.num{
+    font-size:36px;
 }

@@ -9,12 +9,12 @@ import {Article} from "./model/article";
     },
     template: `
     <li class="list-group-item media">
-    <div class="media-left" style="background:gray;font-size:23px;padding:20px;">
-       <span> {{ article.votes }}</span>
+    <div class="media-left">
+       <span class="num"> {{ article.votes }}</span>
     </div>
     <div class="media-body">
         <h3 class="media-heading">
-          <a class="btn btn-link" href="{{ article.link }}"> 
+          <a href="{{ article.link }}"> 
             {{ article.title }}
            </a>
            <span class="meta">({{ article.domain() }})</span>
@@ -84,7 +84,7 @@ export class RedditApp {
         this.articles = [
             new Article('Angular 2', 'http://angular.io', 3),
             new Article('Fullstack', 'http://fullstack.io', 2),
-            new Article('Angular Homepage', 'http://angular.io', 1),
+            new Article('Angular Cli', 'http://cli.angular.io', 1),
         ];
     }
 
