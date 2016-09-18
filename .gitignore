@@ -15,3 +15,7 @@ npm-debug.log
 /lesson2-form/typings/
 /todo/node_modules/
 /todo/typings/
+/.idea
+/routerdemo/node_modules
+/redditapp/typings
+/redditapp/node_modules
