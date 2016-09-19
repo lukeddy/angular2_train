@@ -9,7 +9,7 @@ Angular2 学习示例
 
 
 
-##### Angular2 项目收集
-[angular-2-samples](http://www.syntaxsuccess.com/angular-2-samples/#/demo/spreadsheet)
-
-[angular2 material](https://material.angular.io/)
+##### Angular2 项目&资料收集
+[angular-2-samples](http://www.syntaxsuccess.com/angular-2-samples/#/demo/spreadsheet)  
+[angular2 material](https://material.angular.io/)  
+[rxjs](https://github.com/Reactive-Extensions/RxJS)  
