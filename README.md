@@ -9,14 +9,17 @@ Angular2 学习示例
 
 
 
-#### Angular2 项目&资料&框架收集
+#### Angular2 项目&资料&框架收集  
+##### Angular2 开源项目  
+[rebirth](https://github.com/greengerong/rebirth)
 [angular-2-samples](http://www.syntaxsuccess.com/angular-2-samples/#/demo/spreadsheet)  
-[angular2 material](https://material.angular.io/)  
-[rxjs](https://github.com/Reactive-Extensions/RxJS)  
-[angularfire2](https://github.com/angular/angularfire2)  
+[boardz-cross-platform-sample](https://github.com/thinktecture/boardz-cross-platform-sample)
 
 ##### Angular2 框架
 [Angular](https://angular.io/)  
+[angular2 material](https://material.angular.io/)  
+[rxjs](https://github.com/Reactive-Extensions/RxJS)  
+[angularfire2](https://github.com/angular/angularfire2)  
 [Universal / Isomorphic](https://universal.angular.io/)  
 [Progressive Web App](https://mobile.angular.io/)  
 [nativescript-angular](https://github.com/NativeScript/nativescript-angular)  
