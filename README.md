@@ -11,9 +11,9 @@ Angular2 学习示例
 
 #### Angular2 项目&资料&框架收集  
 ##### Angular2 开源项目  
-[rebirth](https://github.com/greengerong/rebirth)
+[rebirth](https://github.com/greengerong/rebirth)  
 [angular-2-samples](http://www.syntaxsuccess.com/angular-2-samples/#/demo/spreadsheet)  
-[boardz-cross-platform-sample](https://github.com/thinktecture/boardz-cross-platform-sample)
+[boardz-cross-platform-sample](https://github.com/thinktecture/boardz-cross-platform-sample)  
 
 ##### Angular2 框架
 [Angular](https://angular.io/)  
