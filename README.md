@@ -14,6 +14,7 @@ Angular2 学习示例
 [rebirth](https://github.com/greengerong/rebirth)  
 [angular-2-samples](http://www.syntaxsuccess.com/angular-2-samples/#/demo/spreadsheet)  
 [boardz-cross-platform-sample](https://github.com/thinktecture/boardz-cross-platform-sample)  
+[hacking with angular](https://hacking-with-angular.github.io/)  
 
 ##### Angular2 框架
 [Angular](https://angular.io/)  
