@@ -4,6 +4,7 @@ export class Lesson{
     id:string;
 
     constructor(public title:string ="",
+                public language:string="",
                 public duration=0,
                 public description:string="",
                 private _level:StudentLevel=StudentLevel.BEGINNER
