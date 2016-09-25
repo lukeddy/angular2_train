@@ -21,3 +21,4 @@ npm-debug.log
 /redditapp/node_modules
 node_modules
 typings
+dist
