@@ -39,7 +39,7 @@ var SelectComponent = (function () {
     SelectComponent = __decorate([
         core_1.Component({
             selector: 'my-select',
-            template: '<select (change)="onSelect($event.target.value)" class="form-control">' +
+            template: '<select (change)="onSelect(prod.value)" #prod class="form-control">' +
                 '<option *ngFor="let item of list;let idx=index" value="{{idx}}">' +
                 '{{item.text}}' +
                 '</option>' +
