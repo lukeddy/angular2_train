@@ -27,3 +27,7 @@ Angular2 学习示例
 [react-native-renderer](https://github.com/angular/react-native-renderer)  
 [Ionic2](http://ionic.io/2/)  
 [angular-electron](https://github.com/angular/angular-electron/)  
+
+
+##### Angular2工具
+[Debug&Profile工具-Augury](https://github.com/rangle/augury)
