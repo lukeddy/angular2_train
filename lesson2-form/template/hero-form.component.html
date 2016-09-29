@@ -1,0 +1,47 @@
+<div class="row">
+    <h1>Hero表单</h1>
+    <form (submit)="onsubmit()" #heroForm="ngForm">
+        <span>{{diagnotic}}</span>
+        <div class="form-group">
+            <label for="name">英雄名</label>
+            <input type="text" class="form-control" id="name" required
+                   [(ngModel)]="myHero.name"
+                   name="name" #spy="ngModel">
+            TODO: remove this: {{myHero.name}} <br> 
+            TODO: remove this:{{spy.className}}
+            <p [hidden]="spy.valid||spy.pristine" class="alert alert-danger">
+                名字无效
+            </p>
+        </div>
+        <div class="form-group">
+            <label for="alterEgo">Alter Ego</label>
+            <input type="text" class="form-control" id="alterEgo" [(ngModel)]="myHero.alterEgo" name="alterEgo">
+        </div>
+        <div class="form-group">
+            <label for="power">能量</label>
+            <select class="form-control" id="power" required [(ngModel)]="myHero.power" name="power">
+                <option *ngFor="let p of powers" [value]="p">{{p}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!heroForm.form.valid">提交</button>
+        <button type="button" class="btn btn-default" (click)="createHero()">创建Hero</button>
+
+    </form>
+</div>
+<div [hidden]="!submitted">
+    <h2>您的提交内容如下:</h2>
+    <div class="row">
+        <div class="col-xs-3">姓名</div>
+        <div class="col-xs-9  pull-left">{{ myHero.name }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">Alter Ego</div>
+        <div class="col-xs-9 pull-left">{{ myHero.alterEgo }}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">能量</div>
+        <div class="col-xs-9 pull-left">{{ myHero.power }}</div>
+    </div>
+    <br>
+    <button class="btn btn-default" (click)="submitted=false">修改</button>
+</div>
