@@ -30,4 +30,9 @@ Angular2 学习示例
 
 
 ##### Angular2工具
-[Debug&Profile工具-Augury](https://github.com/rangle/augury)
+[Debug&Profile工具-Augury](https://github.com/rangle/augury)  
+
+
+##### Angular2视频
+[Angular2.0英文版视频教程](http://shikezhi.com/html/2016/angularjs_0929/1221189.html)  
+
