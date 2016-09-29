@@ -10,6 +10,11 @@ Angular2 学习示例
 
 
 #### Angular2 项目&资料&框架收集  
+##### Angular2基础
+[ES6规范-中文-阮一峰](http://es6.ruanyifeng.com/#docs/intro)  
+[ES6英文](https://github.com/lukehoban/es6features)  
+[TypeScript](https://www.typescriptlang.org/)  
+
 ##### Angular2 开源项目  
 [rebirth](https://github.com/greengerong/rebirth)  
 [angular-2-samples](http://www.syntaxsuccess.com/angular-2-samples/#/demo/spreadsheet)  
